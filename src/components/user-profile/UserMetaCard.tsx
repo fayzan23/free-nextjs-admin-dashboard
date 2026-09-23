@@ -181,9 +181,9 @@ export default function UserMetaCard() {
           </div>
         </div>
       </div>
-      <Modal isOpen={isOpen} onClose={closeModal} className="m-4 max-w-[700px]">
-        <div className="relative no-scrollbar w-full max-w-[700px] overflow-y-auto rounded-3xl bg-white p-4 lg:p-11 dark:bg-gray-900">
-          <div className="px-2 pe-14">
+      <Modal isOpen={isOpen} onClose={closeModal} className="m-4 w-[920px] max-w-none">
+        <div className="relative no-scrollbar w-full overflow-y-auto rounded-3xl bg-white p-4 lg:p-11 dark:bg-gray-900">
+          <div className="px-2">
             <h4 className="mb-2 text-2xl font-semibold text-gray-800 dark:text-white/90">
               Edit Personal Information
             </h4>
@@ -203,8 +203,8 @@ export default function UserMetaCard() {
                       src="/images/user/owner.png"
                       alt="Profile Picture"
                       width={100}
-                      height={100}
-                      className="size-20 rounded-full object-cover sm:size-25"
+                      height={60}
+                      className="h-20 w-28 rounded-full sm:h-25 sm:w-32"
                     />
                     <label
                       htmlFor="file-upload"
@@ -253,23 +253,23 @@ export default function UserMetaCard() {
                   Personal Information
                 </h5>
 
-                <div className="grid grid-cols-1 gap-x-6 gap-y-5 lg:grid-cols-2">
-                  <div className="col-span-2 lg:col-span-1">
+                <div className="grid grid-cols-2 gap-x-6 gap-y-5">
+                  <div>
                     <Label>First Name</Label>
                     <Input type="text" defaultValue="Musharof" />
                   </div>
 
-                  <div className="col-span-2 lg:col-span-1">
+                  <div>
                     <Label>Last Name</Label>
                     <Input type="text" defaultValue="Chowdhury" />
                   </div>
 
-                  <div className="col-span-2 lg:col-span-1">
+                  <div>
                     <Label>Email Address</Label>
                     <Input type="text" defaultValue="randomuser@pimjo.com" />
                   </div>
 
-                  <div className="col-span-2 lg:col-span-1">
+                  <div>
                     <Label>Phone</Label>
                     <Input type="text" defaultValue="+09 363 398 46" />
                   </div>
