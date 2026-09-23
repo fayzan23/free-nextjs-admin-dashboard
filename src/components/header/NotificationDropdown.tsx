@@ -58,9 +58,6 @@ export default function NotificationDropdown() {
       <Dropdown
         isOpen={isOpen}
         onClose={closeDropdown}
-        // BUG (RL Multimodal Task 1): panel is left-aligned and oversized so it
-        // overflows the viewport and gets clipped by the header's overflow-hidden.
-        // Correct fix restores right alignment on desktop AND removes parent clipping.
         className="absolute left-0 mt-4.25 flex h-[520px] w-[420px] flex-col rounded-2xl border border-gray-200 bg-white p-3 shadow-theme-lg dark:border-gray-800 dark:bg-gray-dark"
       >
         <div className="mb-3 flex items-center justify-between border-b border-gray-100 pb-3 dark:border-gray-700">
