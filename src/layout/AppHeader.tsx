@@ -163,7 +163,7 @@ const AppHeader: React.FC = () => {
         </div>
         <div
           className={cn(
-            "flex w-full items-center justify-between gap-4 px-5 py-4 shadow-theme-md xl:flex xl:justify-end xl:px-0 xl:shadow-none",
+            "flex w-full items-center justify-between gap-4 overflow-hidden px-5 py-4 shadow-theme-md xl:flex xl:justify-end xl:px-0 xl:shadow-none",
             isApplicationMenuOpen ? "flex" : "hidden",
           )}
         >
