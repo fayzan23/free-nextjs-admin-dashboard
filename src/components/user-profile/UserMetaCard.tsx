@@ -181,7 +181,7 @@ export default function UserMetaCard() {
           </div>
         </div>
       </div>
-      <Modal isOpen={isOpen} onClose={closeModal} className="m-4 w-[920px] max-w-none">
+      <Modal isOpen={isOpen} onClose={closeModal} className="m-4 w-[920px] min-w-[920px] max-w-none shrink-0">
         <div className="relative no-scrollbar w-full overflow-y-auto rounded-3xl bg-white p-4 lg:p-11 dark:bg-gray-900">
           <div className="px-2">
             <h4 className="mb-2 text-2xl font-semibold text-gray-800 dark:text-white/90">
@@ -198,13 +198,13 @@ export default function UserMetaCard() {
                   Change Profile Picture
                 </h4>
                 <div className="mb-6 flex max-w-sm items-center gap-6 lg:pe-5">
-                  <div className="relative size-20 shrink-0 rounded-full sm:size-25">
+                  <div className="relative shrink-0 overflow-visible">
                     <Image
                       src="/images/user/owner.png"
                       alt="Profile Picture"
-                      width={100}
-                      height={60}
-                      className="h-20 w-28 rounded-full sm:h-25 sm:w-32"
+                      width={160}
+                      height={80}
+                      className="h-20 w-40 rounded-full"
                     />
                     <label
                       htmlFor="file-upload"
